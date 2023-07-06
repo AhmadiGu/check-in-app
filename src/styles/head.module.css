@@ -1,0 +1,36 @@
+.nav {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.menu { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    width: 30%; 
+    padding: 0.5% 3.5% 0.5% ;
+    box-sizing: border-box;
+     
+}
+
+.logo a {
+    color: rgba(0, 0, 0, 0.911);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.ul {
+    width: 70%;
+    padding: 0.5% 3.5% 0.5% ;
+    box-sizing: border-box;
+    display: flex; 
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
