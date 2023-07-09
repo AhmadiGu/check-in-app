@@ -11,21 +11,41 @@
     gap: 50px;
 }
 
-.item img {
-    border-radius: 5px;
-    width: 65%;
-    background-color: aqua;
-    height: 100%;
+.item button span {
+   color : rgb(12, 12, 12);
 }
 
-.item .info {
+.item img { 
+    width: 65%; 
+    height: 100%; 
+    border-radius: 10px 
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #000000;
+}
+
+.infoDev {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     width: 35%;
-    height: 100%;
-    gap: 20px;
 }
 
-.item .info i{
-    color: rgba(0, 0, 0, 0.527);
+.info { 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px; 
+    color: #000000;
+}
+
+.infoDev i{
+    color: #8C8C8C;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px; 
+
 }
