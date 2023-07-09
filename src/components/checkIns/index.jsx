@@ -14,6 +14,7 @@ const CheckIns = () => {
 
     const handleCardClick = (id) => {
       router.push(`/details/${id}`);
+      console.log(id);
     };
 
     return (
