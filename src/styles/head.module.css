@@ -1,36 +1,29 @@
-.nav {
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    height: 10vh;
+.lay {
+    background-color: rgb(167, 167, 219);
 }
-
 .menu { 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #FFFFFF;
     width: 100%;
 }
 
 .logo {
-    width: 30%; 
-    padding: 0.5% 3.5% 0.5% ;
-    box-sizing: border-box;
-     
-}
-
-.logo a {
-    color: rgba(0, 0, 0, 0.911);
-    font-size: 1.5rem;
-    font-weight: 700;
+    width: 30%;  
+    color: #000000; 
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px; 
 }
 
 .ul {
     width: 70%;
-    padding: 0.5% 3.5% 0.5% ;
-    box-sizing: border-box;
-    display: flex; 
-    justify-content: flex-end;
-    font-size: 1.3rem;
-    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; 
 }
+
+.divider {
+    margin: 0%;
+} 
