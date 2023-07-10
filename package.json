@@ -6,14 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "api": "node api/graphql.js"
   },
   "dependencies": {
     "antd": "^5.6.4",
+    "apollo-boost": "^0.4.9",
+    "apollo-server-micro": "^3.12.0",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
+    "graphql": "^15.8.0",
     "next": "13.4.9",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.14"
   }
 }
