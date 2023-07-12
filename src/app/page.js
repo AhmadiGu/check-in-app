@@ -1,11 +1,10 @@
-import CheckIns from '../components/checkIns' 
-import styles from './page.module.css'
- 
+import React from 'react';
+import Main from '../components/home/main'; 
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className={styles.main}> 
-       <CheckIns />
-    </main>
-  )
-}
+    <Main />
+  );
+};
+
+export default Home;
