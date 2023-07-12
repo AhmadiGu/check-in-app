@@ -10,15 +10,20 @@
     "api": "node api/graphql.js"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
     "antd": "^5.6.4",
     "apollo-boost": "^0.4.9",
     "apollo-server-micro": "^3.12.0",
+    "encoding": "^0.1.13",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
+    "firebase": "^10.0.0",
     "graphql": "^15.8.0",
     "next": "13.4.9",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-masonry-css": "^1.0.16",
+    "react-redux": "^8.1.1"
   },
   "devDependencies": {
     "@types/react": "18.2.14"
