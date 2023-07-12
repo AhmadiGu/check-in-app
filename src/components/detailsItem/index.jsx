@@ -1,23 +1,45 @@
+"use client"
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
 import { Layout} from 'antd';
 import { Typography } from 'antd'; 
 import Head from "../header"
-import styles from '../../styles/detailItem.module.css';
+import styles from './detailItem.module.css';
+import { useRouter } from 'next/navigation';
+import { usePathname, useSearchParams } from 'next/navigation'
 
 const { Content } = Layout;
 const { Title } = Typography;
 const { Paragraph } = Typography;
 
-const DetailsItem = () => {
+const DetailsItem = () => {  
+    const checkIns = useSelector((state) => state.checkIns.checkIns);
+    const pathname = usePathname()
+    const url = `${pathname}` 
+    const parts = url.split('/').filter(part => part !== '');  
+    const firstPart = parts[0]; // 'details'
+    const secondPart = parts[1]; // 'PMUsSXWyKjvvoLYOCCxq%7D'
+    const id = secondPart.split('%').filter(part => part !== ''); 
+    const itemId = id[0]; 
+
+    const itemData = checkIns.filter((item) => item.id === itemId); 
     return (
         <Layout>
         <Head />
         <Content className={styles.item}>
-            <img src="https://picsum.photos/200/300" alt="random" />
+            {itemData.map((item) => (
+            <>
+            <div> 
+                <Title level={5} className={styles.imgUrl} editable>Image Url</Title>
+                <img src={item.photo} />
+            </div>
             <div className={styles.infoDev}>
-                <Title level={2} className={styles.title} editable>Details</Title>
-                <Paragraph editable className={styles.info} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis ipsum ad, vel dolore iusto libero veniam dignissimos recusandae ab in hic id provident esse culpa totam dolor? Nobis, dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis ipsum ad, vel dolore iusto libero veniam dignissimos recusandae ab in hic id provident esse culpa totam dolor? Nobis, dolorem.</Paragraph>
-                <i>Nov 10, 2022</i>
-            </div> 
+                <Title level={2} className={styles.title} editable>{item.name}</Title>
+                <Paragraph editable className={styles.info} > {item.description}</Paragraph> 
+                <i>{item.date.seconds && new Date(item.date.seconds * 1000).toLocaleString()}</i>
+            </div>
+            </> 
+            ))}
         </Content>
         </Layout>
     )
