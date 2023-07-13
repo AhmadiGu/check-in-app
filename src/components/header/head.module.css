@@ -1,0 +1,29 @@
+.lay {
+    background-color: rgb(167, 167, 219);
+}
+.menu { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.logo {
+    width: 30%;  
+    color: #000000; 
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px; 
+}
+
+.ul {
+    width: 70%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; 
+}
+
+.divider {
+    margin: 0%;
+} 
