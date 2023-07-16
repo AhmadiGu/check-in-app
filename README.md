@@ -1,8 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+<a name="readme-top"></a>
 
-First, run the development server:
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 Check_Ins App <a name="about-project"></a>
+
+In this app its used firebase and firestore as backend and typeScript that the javaScript code is also include used Masonry Layout also inthis app I get data from firestore database.Its an assgnment.
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Language/Framework</summary>
+  <ul>
+    <li><a href="https://nextjs.org/docs">Nextjs 13</a></li>
+    <li><a href="https://www.typeScript.org/">TypeScript</a></li>
+    <li><a href="https://www.postgresql.org/">Firebase/Firstore</a></li>
+    <li><a href="https://www.postgresql.org/">JavaScript</a></li>
+    <li><a href="https://www.postgresql.org/">Redux</a></li>
+    <li><a href="https://www.postgresql.org/">Masonry Layout</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **See all checkIns**
+- **See each item specific details page**
+ 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+- Install TypeScript on your computer or run it with docker
+
+### Setup
+
+Clone this repository by using the command line :
+
+- `git clone https://github.com/AhmadiGu/check-in-app`
+
+### Install
+
+Install this project with:
+
+`npm i`
+
+
+
+### Usage
+
+To run the project, execute the following command:
 
 ```bash
 npm run dev
@@ -10,25 +93,45 @@ npm run dev
 yarn dev
 # or
 pnpm dev
+# for run TypeScript 
+npx tsc --watch 
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+NB: You need to create an `env` file for your database credentials
 
-## Learn More
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To learn more about Next.js, take a look at the following resources:
+<!-- AUTHORS -->
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 👥 Authors <a name="authors"></a> 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+👤 **Gulalai Ahmadi**
+- GitHub: [@AhmadiGu](https://github.com/AhmadiGu)
+- LinkedIn: [gulalai-ahmadi](https://www.linkedin.com/in/gulalai-ahmadi)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ 
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome! 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project by staring it.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+ 
+
+ 
